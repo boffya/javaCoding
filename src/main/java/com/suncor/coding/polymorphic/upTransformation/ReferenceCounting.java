@@ -8,6 +8,7 @@ package com.suncor.coding.polymorphic.upTransformation;
 public class ReferenceCounting {
 
     public static void main(String[] args) {
+        System.out.println(System.getProperty("os.name"));
         Shared shared = new Shared();
         Composing[] composing = {
                 new Composing(shared),
