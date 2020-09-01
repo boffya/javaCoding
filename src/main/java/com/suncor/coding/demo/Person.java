@@ -6,7 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.util.StringUtils;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -49,7 +52,20 @@ public class Person {
         set.add(Person.builder().name("sudan").age(16).gender(0).build());
         set.add(Person.builder().name("sunc").age(18).gender(1).adress("1111").build());
 
+        Set<String> set1 = Sets.newHashSet();
+//        set1.add(null);
+        Set<String> set2 = Sets.newHashSet();
+        set1.addAll(set2);
+        System.out.println(set1);
 
-        System.out.println(set);
+        Map<String,Object> map  = new HashMap(){{
+            put("sss","qqqq");
+            put("ssqs",1);
+        }};
+        System.out.println(map);
+
+
+        System.out.println(StringUtils.capitalize("sssssBbb"));
+
     }
 }

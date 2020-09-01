@@ -14,7 +14,6 @@ public class Meal {
         ExecutorService executor1 = Executors.newScheduledThreadPool(5);
 
 
-
         List<Integer> list = new ArrayList<>();
         List<Integer> linked = new LinkedList<>();
         list.listIterator().remove();
