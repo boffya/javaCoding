@@ -33,8 +33,7 @@ public class ReceiptBuilder {
         ReceiptBuilder rb = new ReceiptBuilder();
         rb.add("Jack's Magic Beans", 4, 4.25);
         rb.add("Princess Peas", 3, 5.1);
-        rb.add(
-                "Three Bears Porridge", 1, 14.29);
+        rb.add("Three Bears Porridge", 1, 14.29);
         System.out.println(rb.build());
     }
 }
